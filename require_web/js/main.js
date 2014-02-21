@@ -1,0 +1,11 @@
+require.config({
+    paths:{
+        jquery:'jquery-1.8.3.min'
+    },
+    //相对路径指引入require.js的页面为参考点
+    baseUrl:'js'
+});
+require(['jquery'],['say_love'],function($,say_love){
+    alert($().jquery);
+    say_love();
+});
